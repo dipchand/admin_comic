@@ -31,6 +31,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
         //Step 07
         firebaseAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -45,7 +46,9 @@ public class Login extends AppCompatActivity {
                     return;
                 }
             }
+
         };
+
 
         //Step 02
         mEmail = findViewById(R.id.etUsername);
